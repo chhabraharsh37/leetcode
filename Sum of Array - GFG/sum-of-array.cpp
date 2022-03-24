@@ -13,7 +13,8 @@ public:
 	    if(n==1)
 	    return arr[0];
 	    
-	    return arr[n-1]+sum(arr,n-1);}
+	    return arr[0]+sum(arr+1,n-1);}
+	    
 };
 
 // { Driver Code Starts.
