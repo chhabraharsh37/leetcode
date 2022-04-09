@@ -13,19 +13,18 @@ class Solution{
     public:
     vector<int> leaders(int a[], int n){
        
-       vector <int> b;
-       b.push_back(a[n-1]);
+       vector<int> v;
+       v.push_back(a[n-1]);
        int min=a[n-1];
        for(int i=n-2;i>=0;i--)
        {
            if(a[i]>=min)
-           {b.push_back(a[i]);
-           min=a[i];}
+           {v.push_back(a[i]);
+               min=a[i];
+           }
        }
-       reverse(b.begin(),b.end());
-       
-       return b;
-        
+       reverse(v.begin(),v.end());
+       return v;
     }
 };
 
