@@ -30,11 +30,11 @@ class Solution
     public:
     void display(Node *head)
     {
-      while(head!=NULL)
-      {
-          cout<<head->data<<" ";
-          head=head->next;
-      }
+      if(head==NULL)
+      return;
+      cout<<head->data<<" ";
+      display(head->next);
+      
     }
 };
 
